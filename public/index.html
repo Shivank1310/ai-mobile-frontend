@@ -1,0 +1,17 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>SIH Sports Assess (PWA)</title>
+    <link rel="manifest" href="/manifest.json">
+  </head>
+  <body class="bg-slate-50">
+    <div id="root"></div>
+    <script>
+      if ('serviceWorker' in navigator) {
+        navigator.serviceWorker.register('/sw.js').then(function(reg){ console.log('SW registered', reg); }).catch(console.error);
+      }
+    </script>
+  </body>
+</html>
